@@ -178,7 +178,7 @@ class Kernel implements KernelContract
     }
 
     /**
-     * Call the terminate method on any terminable middleware.
+     * Call the terminate method on any terminable middleware.在任何有期限的中间件调用终止方法
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Illuminate\Http\Response  $response

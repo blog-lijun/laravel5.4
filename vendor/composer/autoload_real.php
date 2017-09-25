@@ -13,7 +13,7 @@ class ComposerAutoloaderInit57c106a1b6f79270f5d9719db73ec896
         }
     }
 
-    public static function getLoader()
+    public static function getLoader()  //自动加载方法
     {
         if (null !== self::$loader) {
             return self::$loader;
