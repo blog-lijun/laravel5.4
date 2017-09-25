@@ -47,12 +47,17 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 |
 */
 
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);  //创建实例并创建实例相关的依赖
 
+
+
+//返回数据
 $response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
+    $request = Illuminate\Http\Request::capture() //用户请求的数据;cookie,header==>object(Illuminate\Http\Request)#38 (28)
 );
-
-$response->send();
+//dd($request);
+// 数据发送给用户
+//var_dump($response);die;
+$response->send(); //
 
 $kernel->terminate($request, $response);
