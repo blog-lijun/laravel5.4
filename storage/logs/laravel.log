@@ -5602,3 +5602,39 @@ Stack trace:
 #51 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #52 /data/blog/public/index.php(56): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #53 {main}  
+[2017-09-25 09:17:50] local.ERROR: Exception: The bootstrap/cache directory must be present and writable. in /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:190
+Stack trace:
+#0 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(165): Illuminate\Foundation\ProviderRepository->writeManifest(Array)
+#1 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\Foundation\ProviderRepository->compileManifest(Array)
+#2 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(549): Illuminate\Foundation\ProviderRepository->load(Array)
+#3 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#4 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(208): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#5 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith(Array)
+#6 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#7 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#8 /data/blog/public/index.php(56): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}  
+[2017-09-25 09:17:53] local.ERROR: Exception: The bootstrap/cache directory must be present and writable. in /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:190
+Stack trace:
+#0 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(165): Illuminate\Foundation\ProviderRepository->writeManifest(Array)
+#1 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\Foundation\ProviderRepository->compileManifest(Array)
+#2 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(549): Illuminate\Foundation\ProviderRepository->load(Array)
+#3 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#4 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(208): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#5 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith(Array)
+#6 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#7 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#8 /data/blog/public/index.php(56): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}  
+[2017-09-25 09:17:55] local.ERROR: Exception: The bootstrap/cache directory must be present and writable. in /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:190
+Stack trace:
+#0 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(165): Illuminate\Foundation\ProviderRepository->writeManifest(Array)
+#1 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\Foundation\ProviderRepository->compileManifest(Array)
+#2 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(549): Illuminate\Foundation\ProviderRepository->load(Array)
+#3 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#4 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(208): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#5 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith(Array)
+#6 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#7 /data/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#8 /data/blog/public/index.php(56): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}  
