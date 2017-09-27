@@ -62,7 +62,7 @@ class Store implements Session
 
     /**
      * Start the session, reading the data from a handler.
-     * 启用sesssion,从会话中读取数据
+     *
      * @return bool
      */
     public function start()
@@ -78,7 +78,7 @@ class Store implements Session
 
     /**
      * Load the session data from the handler.
-     * 加载session从属性和会话中
+     *
      * @return void
      */
     protected function loadSession()
@@ -168,7 +168,7 @@ class Store implements Session
 
     /**
      * Checks if a key exists.
-     * 检查session是否存在可以为空
+     *
      * @param  string|array  $key
      * @return bool
      */
@@ -181,7 +181,7 @@ class Store implements Session
 
     /**
      * Checks if a key is present and not null.
-     * 检查session key  是否为空
+     *
      * @param  string|array  $key
      * @return bool
      */
@@ -194,7 +194,7 @@ class Store implements Session
 
     /**
      * Get an item from the session.
-     * 获取session
+     *
      * @param  string  $key
      * @param  mixed  $default
      * @return mixed
@@ -206,7 +206,7 @@ class Store implements Session
 
     /**
      * Get the value of a given key and then forget it.
-     * 获取一个session值并遗忘它
+     *
      * @param  string  $key
      * @param  string  $default
      * @return mixed
@@ -337,7 +337,7 @@ class Store implements Session
      * @param  mixed   $value
      * @return void
      */
-    public function flash($key, $value)
+    public function flash($key, $value = true)
     {
         $this->put($key, $value);
 

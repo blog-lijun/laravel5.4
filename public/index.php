@@ -7,6 +7,8 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
+define('LARAVEL_START', microtime(true));
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -19,7 +21,7 @@
 |
 */
 
-require __DIR__.'/../bootstrap/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -47,17 +49,12 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 |
 */
 
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);  //创建实例并创建实例相关的依赖
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
-
-
-//返回数据
 $response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture() //用户请求的数据;cookie,header==>object(Illuminate\Http\Request)#38 (28)
+    $request = Illuminate\Http\Request::capture()
 );
-//dd($request);
-// 数据发送给用户
-//var_dump($response);die;
-$response->send(); //
+
+$response->send();
 
 $kernel->terminate($request, $response);

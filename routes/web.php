@@ -10,22 +10,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Session;
 
 Route::get('/', function () {
-    if(session('managerName'))
-        return view('welcome');
-    else
-        return view('login');
+    return view('welcome');
 });
-Route::get('/login','Auth\LoginController@index');
-Route::post('/checkLogin','Auth\LoginController@checkLogin');
-Route::get('/LoginOut','Auth\LoginController@LoginOut');
-Route::get('/artical','Auth\ArticalController@index');
-Route::get('/cache', function () {
-    //var_dump(Cache::class);
-    //Session::put('myName','lijun');
-    //Session::put(['myName'=>'lijun']);
-    return view('downLoad');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix'=>'/','middleware' => ['web']], function () {
+
+    Route::get('/artical', 'HomeController@index')->name('home');
 });
